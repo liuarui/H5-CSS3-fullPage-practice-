@@ -1,0 +1,249 @@
+.section1 {
+    background: #fadd67 url(../images/t1fpyqfltdxxaiulhh-990-600.png) no-repeat center bottom;
+}
+
+.fly {
+    position: absolute;
+    right: 20%;
+    top: 10%;
+}
+
+.shirt01 {
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    bottom: 335px;
+}
+
+.goods {
+    position: absolute;
+    left: 50%;
+    margin-left: -420px;
+    bottom: 150px;
+}
+
+/*第二屏开始*/
+.section2 {
+    background: #84a2d4 url(../images/t1zdgpfi8exxca6rfn-2000-600.png) no-repeat center bottom;
+    z-index: 2;
+}
+
+.computer {
+    width: 990px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+.search {
+    width: 222px;
+    height: 45px;
+    background: url("../images/search.png");
+    position: absolute;
+    top: 30%;
+    right: -30px;
+    display: none;
+
+}
+
+.search-02-1 {
+    position: absolute;
+    bottom: 300px;
+    right: 370px;
+    display: none;
+}
+
+.search_words {
+    position: absolute;
+    right: 30px;
+    top: 4px;
+    opacity: 0;
+}
+
+.sofa-goods {
+    height: 100px;
+    position: absolute;
+    bottom: 217px;
+    right: 270px;
+    display: none;
+
+}
+
+.shirt-02 {
+    position: absolute;
+    bottom: 345px;
+    left: 395px;
+    width: 100px;
+    display: none;
+    z-index: 6;
+}
+
+.cover_box {
+    position: absolute;
+    bottom: 345px;
+    right: 496px;
+    width: 102px;
+    height: 90px;
+    z-index: 5;
+    background-color: #fff;
+    display: none;
+}
+
+/*第三屏幕制作*/
+.section3 {
+    background: #ef674d;
+    z-index: 1;
+
+}
+
+.main {
+    position: absolute;
+    width: 700px;
+    height: 500px;
+    background: url("../images/main.png") no-repeat center center;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+}
+
+.select {
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    bottom: 0;
+    right: 8px;
+}
+
+.btn-01 {
+    position: absolute;
+    bottom: 10px;
+}
+.btn-01-a {
+    opacity: 0;
+}
+.img-01 {
+    position: absolute;
+    top: 0;
+}
+.img-01-a {
+    opacity: 0;
+}
+
+
+.shirt-03,
+.tlf{
+    position: absolute;
+    left: 115px;
+    bottom: 200px;
+    display: none;
+}
+/*第四屏开始*/
+.section4 {
+    background: #fed url(../images/t1iresfnxaxxca6rfn-2000-600.png) no-repeat center bottom;
+}
+.cloud {
+    position: absolute;
+    left: 50%;
+    bottom: 550px;
+}
+.words-04 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 500px;
+}
+.words-04-a {
+    opacity: 0;
+}
+.car {
+    width: 500px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.car-tlf {
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    display: none;
+}
+.kong_car {
+    z-index: 5;
+}
+.section5 {
+    background: #d04759 url(../images/t1yisqfa4exxa3gmkg-2000-1500.png);
+}
+
+.section6 {
+    background: #84d9ed url(../images/t1dvj.fn0gxxb0_fua-2500-600.png) no-repeat 25% 100%;
+}
+
+.section7 {
+    background: #8ac060 url(../images/t1wf1tfctaxxa3gmkg-2000-1500.png) no-repeat 50% 100%;
+}
+
+.section8 {
+    background: url(../images/ksgw.png);
+}
+
+.go {
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    z-index: 999;
+}
+
+/*///动画组*/
+.updown { /* 类似于js的调用函数 */
+    animation: fly 3s linear infinite;
+}
+
+.shirt-updown {
+    animation: shirt01 2s linear infinite;
+}
+
+/*第一屏动画*/
+@keyframes fly {
+    0% {
+        top: 10%;
+    }
+    50% {
+        top: 20%;
+    }
+    100% {
+        top: 10%;
+    }
+}
+
+@keyframes shirt01 {
+    0% {
+        bottom: 335px
+    }
+    50% {
+        bottom: 345px;
+    }
+    100% {
+        bottom: 335px;
+    }
+}
+/*第四屏动画*/
+.cloud_fly {
+    animation: cloud 60s linear infinite;
+}
+@keyframes cloud {
+    0% {
+        left: 50%;
+    }
+    50% {
+        left: -10%;
+    }
+    100% {
+        left: 50%;
+    }
+}
